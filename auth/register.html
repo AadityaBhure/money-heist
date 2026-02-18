@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Register | Money Heist</title>
+  <link rel="stylesheet" href="auth.css" />
+</head>
+<body>
+
+  <div class="auth-box">
+    <h2>Team Registration</h2>
+
+    <input
+      type="text"
+      id="teamName"
+      placeholder="Team Name"
+      autocomplete="organization"
+    />
+
+    <input
+      type="email"
+      id="email"
+      placeholder="Team Email"
+      autocomplete="email"
+    />
+
+    <input
+      type="password"
+      id="password"
+      placeholder="Password (min 6 chars)"
+      autocomplete="new-password"
+    />
+
+    <button id="registerBtn">Register</button>
+
+    <p class="switch">
+      Already registered?
+      <a href="login.html">Login</a>
+    </p>
+  </div>
+
+  <script type="module" src="auth.js"></script>
+</body>
+</html>

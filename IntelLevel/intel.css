@@ -1,0 +1,158 @@
+/* RESET */
+* {
+  box-sizing: border-box;
+}
+
+/* BASE */
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: black;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* HEADER */
+header {
+  padding: 20px;
+  text-align: center;
+  border-bottom: 1px solid #222;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.2rem;
+  letter-spacing: 3px;
+}
+
+/* TIMER */
+#timer {
+  margin-top: 8px;
+  font-size: 1.05rem;
+  font-weight: bold;
+  color: #c00000;
+}
+
+/* MAIN */
+main {
+  padding: 25px;
+}
+
+/* SECTIONS */
+section {
+  margin-bottom: 40px;
+}
+
+section h2 {
+  margin-bottom: 15px;
+  font-size: 1.4rem;
+  letter-spacing: 2px;
+}
+
+/* GRID */
+.grid {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+/* ================= CARDS ================= */
+.card {
+  min-width: 140px;
+  padding: 15px 20px;
+  text-align: center;
+  border-radius: 6px;
+  border: 1px solid #666;
+  background: #2a2a2a; /* base grey */
+  color: #f0f0f0;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+/* UNSOLVED */
+.card.locked {
+  background: #3a3a3a;
+  border-color: #777;
+}
+
+.card.locked:hover {
+  background: #4a4a4a;
+}
+
+/* SOLVED */
+.card.unlocked {
+  background: #0e3d1f;          /* dark green */
+  border-color: #2ecc71;
+  color: #2ecc71;
+  box-shadow: 0 0 18px rgba(46, 204, 113, 0.6);
+  cursor: default;
+  animation: unlockPulse 0.4s ease;
+}
+
+/* SUCCESS ANIMATION */
+@keyframes unlockPulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+/* ================= QUESTION PANEL ================= */
+#questionPanel {
+  min-height: 100vh;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+#questionTitle {
+  font-size: 2rem;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+}
+
+#questionText {
+  font-size: 1.15rem;
+}
+
+/* INPUT */
+#questionPanel input {
+  margin: 25px 0;
+  padding: 12px;
+  width: 300px;
+  background: #1a1a1a;
+  border: 1px solid #444;
+  color: white;
+  border-radius: 4px;
+  outline: none;
+}
+
+#questionPanel input:focus {
+  border-color: #c00000;
+}
+
+/* ================= BUTTONS ================= */
+.btn-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+button {
+  padding: 12px 30px;
+  font-size: 1rem;
+  background: #c00000;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+  background: #8b0000;
+  box-shadow: 0 0 16px rgba(192, 0, 0, 0.6);
+}
+
+/* UTILITY */
+.hidden {
+  display: none;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Execution Summary | Money Heist</title>
+  <link rel="stylesheet" href="execSummary.css" />
+</head>
+<body>
+
+  <div class="summary-container">
+    <h1 class="title">HEIST SUMMARY</h1>
+
+    <section class="card">
+      <h2>Intel Phase</h2>
+      <p id="fpStat">Floor Plan: -- / 4</p>
+      <p id="secStat">Security: -- / 2</p>
+      <p id="camStat">Camera: -- / 1</p>
+    </section>
+
+    <section class="card">
+      <h2>Execution Phase</h2>
+      <section class="win">
+        <p id="cash">Cash Earned: ₹ --</p>
+        <p id="btc">Bitcoin Earned: -- BTC</p>
+      </section>
+      <br>
+      <p id="status">Status: --</p>
+      <p id="finalLoc">Final Location: --</p>
+      <p id="penalty">Time Penalties: -- mins</p>
+      <p id="timeSpent">Time Spent: -- mins</p>
+    </section>
+
+    <button id="finishBtn">Finish Heist</button>
+  </div>
+
+  <script type="module" src="execSummary.js"></script>
+</body>
+</html>

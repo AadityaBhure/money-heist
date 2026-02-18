@@ -1,0 +1,89 @@
+/* RESET */
+* {
+  box-sizing: border-box;
+}
+
+/* BASE */
+body {
+  margin: 0;
+  height: 100vh;
+  background: black;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow: hidden;
+}
+
+/* FULLSCREEN SCREENS */
+.screen {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* HOME TEXT */
+.title {
+  font-size: 4rem;
+  letter-spacing: 4px;
+  margin: 0;
+}
+
+.subtitle {
+  margin-top: 10px;
+  opacity: 0.75;
+}
+
+/* START BUTTON */
+#startHeistBtn {
+  margin-top: 35px;
+  padding: 15px 42px;
+  font-size: 1.1rem;
+  background: #c00000;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+#startHeistBtn:hover {
+  background: #8b0000;
+}
+
+/* VIDEO SCREEN */
+#videoScreen {
+  gap: 28px;
+}
+
+/* VIDEO WINDOW */
+#introVideo {
+  width: 70vw;
+  max-width: 1000px;
+  aspect-ratio: 16 / 9;
+  border-radius: 12px;
+  background: black;
+  box-shadow: 0 0 40px rgba(255, 0, 0, 0.45);
+}
+
+/* INTEL BUTTON (VIDEO ONLY) */
+.intel-btn {
+  padding: 12px 34px;
+  font-size: 1rem;
+  background: #005eff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.intel-btn:hover {
+  background: #0041b3;
+}
+
+/* HIDDEN */
+.hidden {
+  display: none !important;
+}

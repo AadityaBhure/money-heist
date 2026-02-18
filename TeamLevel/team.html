@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Money Heist | Team Level</title>
+  <link rel="stylesheet" href="team.css" />
+</head>
+<body>
+
+  <!-- HOME SCREEN -->
+  <section id="homeScreen" class="screen">
+    <h1 class="title">MONEY HEIST</h1>
+    <p class="subtitle">Hackathon Operation</p>
+    <button id="startHeistBtn">Start Heist</button>
+  </section>
+
+  <!-- VIDEO SCREEN -->
+  <section id="videoScreen" class="screen hidden">
+    <video
+      id="introVideo"
+      src="../assets/video.mp4"
+      controls
+      controlsList="nodownload"
+      disablePictureInPicture
+    ></video>
+
+    <button id="intelBtn" class="intel-btn">
+      Go to Intel
+    </button>
+  </section>
+
+  <script type="module" src="team.js"></script>
+</body>
+</html>

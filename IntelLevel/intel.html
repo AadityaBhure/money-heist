@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Intel Phase | Money Heist</title>
+  <link rel="stylesheet" href="intel.css" />
+</head>
+<body>
+
+<header>
+  <h1>INTEL DASHBOARD</h1>
+  <div id="timer">Time Remaining: --:--</div>
+</header>
+
+<main id="dashboard">
+
+  <section>
+    <h2>Floor Plan</h2>
+    <div class="grid" id="floorGrid"></div>
+  </section>
+
+  <section>
+    <h2>Security</h2>
+    <div class="grid" id="securityGrid"></div>
+  </section>
+
+  <section>
+    <h2>CCTV</h2>
+    <div class="grid" id="cctvGrid"></div>
+  </section>
+
+</main>
+
+<section id="questionPanel" class="hidden">
+  <h2 id="questionTitle"></h2>
+  <p id="questionText"></p>
+
+  <input id="answerInput" placeholder="Enter your answer" />
+
+<div class="btn-row">
+  <button id="submitAnswer">Submit</button>
+  <button id="backBtn">Back to Dashboard</button>
+</div>
+</section>
+
+<script type="module" src="intel.js"></script>
+</body>
+</html>

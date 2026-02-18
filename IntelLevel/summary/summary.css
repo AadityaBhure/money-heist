@@ -1,0 +1,52 @@
+/* RESET */
+* {
+  box-sizing: border-box;
+}
+
+/* BASE */
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: black;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+/* TITLE */
+h1 {
+  margin-top: 40px;
+  font-size: 2.5rem;
+  letter-spacing: 4px;
+}
+
+/* SUMMARY TEXT */
+p {
+  font-size: 1.2rem;
+  margin: 12px 0;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #333;
+  margin: 30px auto;
+  width: 60%;
+}
+
+/* BUTTON */
+button {
+  margin-top: 40px;
+  padding: 15px 42px;
+  font-size: 1.1rem;
+  background: #c00000;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+  background: #8b0000;
+  box-shadow: 0 0 18px rgba(192, 0, 0, 0.6);
+}

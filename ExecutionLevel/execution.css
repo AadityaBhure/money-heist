@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+  background: #000505;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#topBar {
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 22px;
+}
+
+#minimap {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 200px;
+  height: 200px;
+  background: #111;
+  border: 2px solid #db0c26;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#minimap img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+#blackMap {
+  text-align: center;
+  font-size: 14px;
+}
+
+#rewardHud {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background: #111;
+  padding: 15px;
+  border: 2px solid #db0c26;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#gameArea {
+  margin-top: 120px;
+  text-align: center;
+}
+
+#questionBox {
+  margin-top: 20px;
+}
+
+input {
+  padding: 8px;
+  margin-top: 10px;
+  width: 250px;
+}
+
+.btn-row {
+  margin-top: 10px;
+}
+
+#fp4Arrows {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+#fp4Arrows button {
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+#toast {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #db0c26;
+  padding: 10px 20px;
+}
+
+.hidden {
+  display: none;
+}
+button {
+  background: #720411;
+  color: white;
+  border: 1px solid #db0c26;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #8b0415;
+}

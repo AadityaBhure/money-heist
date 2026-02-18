@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Execution Phase</title>
+  <link rel="stylesheet" href="execution.css" />
+</head>
+<body>
+
+  <div id="topBar">
+    <div id="timer">--:--</div>
+  </div>
+
+  <!-- MINIMAP RIGHT -->
+  <div id="minimap">
+    <img id="mapImage" class="hidden" />
+    <div id="blackMap" class="hidden">NO FLOOR PLAN</div>
+  </div>
+
+  <!-- REWARD HUD LEFT -->
+  <div id="rewardHud">
+    <div>💰 ₹ <span id="cashHud">0</span></div>
+    <div>₿ <span id="btcHud">0</span></div>
+  </div>
+
+  <div id="gameArea">
+    <h2 id="locationText">Loading...</h2>
+
+    <div id="questionBox">
+      <p id="questionText">Loading question...</p>
+
+      <input id="answerInput" type="text" autocomplete="off"/>
+      
+      <div class="btn-row">
+        <button id="submitBtn">Submit</button>
+      </div>
+
+      <div id="fp4Arrows" class="hidden">
+        <button id="leftArrow">⬅️</button>
+        <button id="rightArrow">➡️</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="toast" class="hidden"></div>
+
+  <script type="module" src="execution.js"></script>
+</body>
+</html>
