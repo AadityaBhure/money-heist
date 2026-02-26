@@ -40,7 +40,7 @@ let intelEnded = false;
 /* ================= AUTH + INIT ================= */
 onAuthStateChanged(auth, async (user) => {
   if (!user) {
-    location.replace("../auth/login.html");
+    location.replace("../auth/index.html");
     return;
   }
 

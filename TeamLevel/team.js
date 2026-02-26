@@ -17,7 +17,7 @@ let currentUser = null;
 /* ---------- AUTH GUARD ---------- */
 onAuthStateChanged(auth, (user) => {
   if (!user) {
-    window.location.href = "../auth/login.html";
+    window.location.href = "../auth/index.html";
   } else {
     currentUser = user;
   }

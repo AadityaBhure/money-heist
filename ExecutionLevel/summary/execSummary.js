@@ -21,7 +21,7 @@ const finishBtn = document.getElementById("finishBtn");
 /* ================= AUTH ================= */
 onAuthStateChanged(auth, async (user) => {
   if (!user) {
-    location.replace("../../auth/login.html");
+    location.replace("../../auth/index.html");
     return;
   }
 
@@ -86,5 +86,5 @@ function renderSummary(progress) {
 /* ================= FINISH ================= */
 finishBtn.onclick = async () => {
   await auth.signOut();
-  location.replace("../../auth/login.html");
+  location.replace("../../auth/index.html");
 };

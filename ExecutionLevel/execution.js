@@ -45,7 +45,7 @@ function showToast(msg){
 
 /* ================= AUTH ================= */
 onAuthStateChanged(auth, async(user)=>{
-  if(!user) return location.replace("../auth/login.html");
+  if(!user) return location.replace("../auth/index.html");
 
   teamRef = doc(db,"teams",user.uid);
 
