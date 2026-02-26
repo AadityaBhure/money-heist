@@ -1,11 +1,11 @@
 export const ANSWERS = {
-  fp1: ["queue", "queue", "queue"],
-  fp2: ["o(log n)", "o(log n)", "o(log n)"],
-  fp3: ["stack", "stack", "stack"],
-  fp4: ["o(n^2)", "o(n^2)", "o(n^2)"],
+  fp1: ["8", "42", "50"],
+  fp2: ["vault_royal_int", "set", "tuple"],
+  fp3: ["0", "infinite loop", "300"],
+  fp4: ["bfs", "stack", "queue"],
 
-  sec1: ["man in the middle", "man in the middle", "man in the middle"],
-  sec2: ["https", "https", "https"],
+  sec1: ["binary search", "dfs", "lifo"],
+  sec2: ["counter", "buffer overflow", "threads"],
 
-  cam1: ["packet sniffing", "packet sniffing", "packet sniffing"]
+  cam1: ["f", "brute force attack", "target"]
 };
