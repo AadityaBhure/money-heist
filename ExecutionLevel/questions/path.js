@@ -54,7 +54,7 @@ while(i <= 100)
     i *= 2;
 }
 printf("%d", count);`,
-    answer: 0
+    answer: 28
   },
 
   q3: {
