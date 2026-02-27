@@ -13,7 +13,7 @@ import { QUESTIONS } from "./questions.js";
 import { ANSWERS } from "./answers.js";
 
 /* ================= CONFIG ================= */
-const INTEL_DURATION_SECONDS = 60; // testing (3600 for final)
+const INTEL_DURATION_SECONDS = 2100; // testing (3600 for final)
 
 /* ================= DOM ================= */
 const floorGrid = document.getElementById("floorGrid");
